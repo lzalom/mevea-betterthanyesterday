@@ -1,0 +1,234 @@
+/* BASE and GRID */
+
+/* BODY */
+html, body { margin: 0px; padding: 0px; text-align: left; }
+body { background-color: #fff; }
+
+/* EXTRA RESET */
+a { outline: none; cursor: pointer; -ms-user-select: none; }
+* { background-repeat: no-repeat; }
+textarea, input { outline: none; }
+b, strong { font-weight:700; }
+
+*::-moz-selection,
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+p::-moz-selection {
+    background-color:@red; color:@white;
+}
+*::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+p::selection {
+    background-color:@red; color:@white;
+}
+
+/* LAYOUT HELPERS */
+.cb, .clr { clear:both; font-size: 1px; line-height: 1px; }
+.fl { float:left; }
+.fr { float:right; }
+.nowrap, .nobr { white-space: nowrap; }
+.tal, .text-left { text-align: left; }
+.tar, .text-right { text-align: right; }
+.tac, .text-center { text-align: center; }
+
+*,:before,:after {
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+/*input, textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}*/
+input[type=submit] {
+    -webkit-border-radius:0px;
+}
+input,select,textarea{
+    -webkit-user-select: text;
+}
+table{border-collapse:separate}
+
+* { -webkit-text-size-adjust: none; }
+
+/**/
+span.red { color:@red; }
+
+/* CONTENT */
+html { margin: 0px; padding: 0em; min-width:@layoutMinWidth; width:100%; overflow:auto !important; }
+body { overflow:hidden; position:relative; font-size:14px; line-height:24px; color:@textColor; min-width:@layoutMinWidth; width:100%; font-family: 'Lato', sans-serif; font-weight:normal; }
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+hr {
+    border-collapse:collapse;
+    border:none;
+    border-bottom:1px #ebebeb solid;
+    margin-bottom:15px;
+}
+
+.debug {
+    width:200px;
+    padding:5px;
+    background:#fff;
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index:99999;
+    border:1px black solid;
+    display:none;
+
+    p {
+        padding:0px;
+        font-size:13px;
+        color:#000;
+    }
+}
+
+i { font-style:italic; }
+
+/* LAYOUT */
+.layout {
+    width:100%;
+    min-width:@layoutMinWidth;
+}
+.row {
+	width:100%;
+    min-width:@layoutMinWidth;
+	text-align:center;
+	position:relative;
+	z-index:1;
+
+	.inner {
+		 width:100%;
+         max-width:@layoutMaxWidth;
+		 padding:0px @gutter;
+		 position:relative;
+		 margin:auto;
+		 text-align:left;
+
+		 &:after {
+		 	clear:both;
+		 	content:'';
+		 	display:block;
+		 }
+		 .col {
+		 	float:left;
+            position:relative;
+		 }
+	}
+	p {
+		a {
+			color:inherit;
+            text-decoration:underline;
+            color:@red;
+
+            &:hover {
+                text-decoration:none;
+                color:inherit;
+            }
+		}
+	}
+}
+
+.fly {
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+  transform: translateY(100px) scale(1.05) translate3d(0, 0, 0);
+}
+
+.show-block {
+  opacity: 1;
+  transform: translateY(0) scale(1) translate3d(0, 0, 0);
+}
+
+
+.box {
+    border:14px @red solid;
+    position:absolute;
+}
+.box01 {
+    left:25%;
+    right:25%;
+    height:110px;
+    top:0px;
+    border-top:none;
+}
+.box02 {
+    left:7%;
+    right:10%;
+    height:110px;
+    top:0px;
+    border-top:none;
+}
+.box03 {
+    left: 7%;
+    right: -6%;
+    top: 17%;
+    bottom: 17%;
+    z-index: 9;
+}
+
+@media (max-width: 1664px) {
+    .box {
+        border:unit(percentage(14/1664), vw) @red solid;
+        position:absolute;
+    }
+    .box01 {
+        left:25%;
+        right:25%;
+        height:unit(percentage(110/1664), vw);
+        top:0px;
+        border-top:none;
+    }
+    .box02 {
+        left:7%;
+        right:10%;
+        height:unit(percentage(48/1664), vw);
+        top:0px;
+        border-top:none;
+    }
+    .box03 {
+        left: 7%;
+        right: -6%;
+        top: 17%;
+        bottom: 17%;
+        z-index: 9;
+    }
+}
+@media (max-width: 980px) {
+
+}
+@media (max-width: 768px) {
+    .box {
+        border:10px @red solid;
+        position:absolute;
+    }
+    .box01 {
+        left:25%;
+        right:25%;
+        height:45px;
+        top:0px;
+        border-top:none;
+    }
+    .box02 {
+        left:7%;
+        right:10%;
+        height:45px;
+        top:0px;
+        border-top:none;
+    }
+    .box03 {
+        left: 0;
+        right:auto;
+        width:45px;
+        top: 10%;
+        bottom: 10%;
+        z-index: 9;
+        border-left:none;
+    }
+}

@@ -1,0 +1,39 @@
+/* MIXINS */
+.stretched {
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+}
+.vertical-center {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+    margin:auto;
+}
+.clearfix {
+    clear:both;
+    content:'';
+    display:block;
+}
+.link-underline {
+    text-decoration:underline;
+    
+    &:hover {
+        text-decoration:none;
+    }
+}
+.link-no-underline {
+    text-decoration:none;
+    
+    &:hover {
+        text-decoration:underline;
+    }
+}

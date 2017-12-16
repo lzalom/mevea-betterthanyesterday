@@ -1,0 +1,205 @@
+.row.content.journeys {
+	.inner {
+		padding-left:0px;
+		padding-right:0px;
+
+		.col {
+			float:left;
+			width:20%;
+			height:1050px;
+
+			border-top:30px @white solid;
+			transition:all 0.25s linear;
+
+			.header {
+				height:560px;
+				width:100%;
+				background-size:cover;
+				text-align:center;
+				color:@white;
+				text-transform:uppercase;
+				padding-left:@gutter;
+				padding-right:@gutter;
+				padding-top:100px;
+
+				display: -webkit-box!important;
+				display: -webkit-flex!important;
+				display: -ms-flexbox!important;
+				display: flex!important;
+
+				h2 {
+					-webkit-align-self: center!important;
+					-ms-flex-item-align: center!important;
+					-ms-grid-row-align: center!important;
+					align-self: center!important;  
+					letter-spacing:8px;
+					font-weight:700;
+					font-size:28px;
+					line-height:40px;
+				}
+			}
+			.txt {
+				height:490px;
+				padding:50px @gutter 130px @gutter;
+				text-align:center;
+
+				.btn.btn-primary {
+					min-width:10px;
+					text-align:center;
+					white-space:nowrap;
+					letter-spacing:2px;
+					font-size:16px;
+					line-height:16px;
+					padding:15px 1px;
+					font-weight:400;
+					position:absolute;
+					right:@gutter*2;
+					left:@gutter*2;
+					bottom:70px;
+				}
+				p {
+					font-size:19px;
+					line-height:28px;
+					margin-bottom:0px;
+				}
+			}
+			&:hover {
+				border-top:30px @red solid;
+				background:@red;
+				color:@white;
+
+				.txt {
+					.btn.btn-primary {
+						background:@grey;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1664px) {
+	.row.content.journeys {
+		.inner {
+			.col {
+				width:20%;
+				height:unit(percentage(1050/1664), vw);
+
+				border-top:unit(percentage(30/1664), vw) @white solid;
+
+				.header {
+					height:unit(percentage(560/1664), vw);
+					width:100%;
+					padding-left:unit(percentage(30/1664), vw);
+					padding-right:unit(percentage(30/1664), vw);
+					padding-top:unit(percentage(100/1664), vw);
+
+					h2 {
+						letter-spacing:unit(percentage(8/1664), vw);
+						font-size:unit(percentage(28/1664), vw);
+						line-height:unit(percentage(40/1664), vw);
+					}
+				}
+				.txt {
+					height:unit(percentage(490/1664), vw);
+					padding:unit(percentage(50/1664), vw) unit(percentage(30/1664), vw) unit(percentage(130/1664), vw) unit(percentage(30/1664), vw);
+
+					.btn.btn-primary {
+						min-width:unit(percentage(10/1664), vw);
+						letter-spacing:unit(percentage(2/1664), vw);
+						font-size:unit(percentage(16/1664), vw);
+						line-height:unit(percentage(16/1664), vw);
+						padding:unit(percentage(15/1664), vw) unit(percentage(1/1664), vw);
+						right:unit(percentage(60/1664), vw);
+						left:unit(percentage(60/1664), vw);
+						bottom:unit(percentage(70/1664), vw);
+					}
+					p {
+						font-size:unit(percentage(19/1664), vw);
+						line-height:unit(percentage(28/1664), vw);
+					}
+				}
+				&:hover {
+					border-top:unit(percentage(30/1664), vw) @red solid;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 980px) {
+	.row.content.journeys {
+		.inner {
+			.col {
+				width:20%;
+				height:unit(percentage(1250/1664), vw);
+
+				.header {
+					height:unit(percentage(580/1664), vw);
+					h2 {
+						font-size:unit(percentage(33/1664), vw);
+						line-height:unit(percentage(45/1664), vw);
+					}
+				}
+				.txt {	
+					height:unit(percentage(500/1664), vw);
+
+					.btn.btn-primary {
+						font-size:unit(percentage(21/1664), vw);
+						line-height:unit(percentage(21/1664), vw);
+						left:15px;
+						right:15px;
+					}
+					p {
+						font-size:unit(percentage(24/1664), vw);
+						line-height:unit(percentage(33/1664), vw);
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.row.content.journeys {
+		.inner {
+			.col {
+				float:none;
+				width:100%;
+				height:700px;
+				border-top:0px @white solid;
+
+				.header {
+					height:400px;
+					padding-top:100px;
+
+					h2 {
+						letter-spacing:3px;
+						font-size:20px;
+						line-height:30px;
+						width:100%;
+					}
+				}
+				.txt {
+					height:300px;
+					padding:50px @gutter 40px @gutter;
+
+					.btn.btn-primary {
+						letter-spacing:1px;
+						font-size:13px;
+						line-height:13px;
+						padding:12px 1px;
+						position:absolute;
+						right:@gutter*2;
+						left:@gutter*2;
+						bottom:30px;
+					}
+					p {
+						font-size:14px;
+						line-height:20px;
+					}
+				}
+				&:hover {
+					border-top:0px @red solid;
+				}
+			}
+		}
+	}
+}

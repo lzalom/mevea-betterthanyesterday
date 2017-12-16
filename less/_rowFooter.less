@@ -1,0 +1,76 @@
+/* FOOTER */
+.row.footer {
+	background:@grey;
+	padding-top:100px;
+	padding-bottom:20px;
+
+	.inner {
+		text-align:center;
+
+		.claim {
+			width:348px;
+			height:216px;
+			background:transparent url(../gfx/claim.png) 0px 0px no-repeat;
+			background-size:contain;
+			font-size:0px;
+			line-height:0px;
+			margin:auto;
+			margin-bottom:110px;
+		}
+		.copy {
+			font-size:15px;
+			line-height:18px;
+			color:@greyLight;
+		}
+	}
+}
+@media (max-width: 1664px) {
+	.row.footer {
+		padding-top:unit(percentage(100/1664), vw);
+		padding-bottom:unit(percentage(20/1664), vw);
+
+		.inner {
+			.claim {
+				width:unit(percentage(348/1664), vw);
+				height:unit(percentage(216/1664), vw);
+				margin-bottom:unit(percentage(110/1664), vw);
+			}
+			.copy {
+				font-size:unit(percentage(15/1664), vw);
+				line-height:unit(percentage(18/1664), vw);
+			}
+		}
+	}
+}
+@media (max-width: 980px) {
+	.row.footer {
+		.inner {
+			.claim {
+				width:unit(percentage(448/1664), vw);
+				height:unit(percentage(316/1664), vw);
+				margin-bottom:unit(percentage(110/1664), vw);
+			}
+			.copy {
+				font-size:unit(percentage(20/1664), vw);
+				line-height:unit(percentage(23/1664), vw);
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.row.footer {
+		padding-top:40px;
+		padding-bottom:20px;
+
+		.inner {
+			.copy {
+				font-size:12px;
+				line-height:16px;
+			}
+		}
+	}
+}
+
+
+
+

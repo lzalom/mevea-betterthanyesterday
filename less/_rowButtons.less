@@ -1,0 +1,120 @@
+/* BUTTONS */
+.btn {
+	text-decoration:none;
+	text-transform:uppercase;
+	display:inline-block;
+	transition:all 0.25s linear;
+
+	&.btn-default {
+		background:@grey;
+		border:1px @grey solid;
+		padding:25px 10px;
+		min-width:520px;
+		color:@white;
+		box-shadow:0px 0px 25px 12px rgba(0,0,0,0.05);
+		font-size:16px;
+		line-height:16px;
+		font-weight:700;
+		letter-spacing:3px;
+
+		&:hover {
+			background:@white;
+			color:@grey;
+		}
+	}
+	&.btn-primary {
+		background:@red;
+		border:1px @red solid;
+		padding:25px 10px;
+		min-width:520px;
+		color:@white;
+		box-shadow:0px 0px 25px 12px rgba(0,0,0,0.05);
+		font-size:16px;
+		line-height:16px;
+		font-weight:700;
+		letter-spacing:3px;
+
+		&:hover {
+			background:@white;
+			color:@red;
+		}
+	}
+	&.btn-blank {
+		color:@red;
+		font-size:22px;
+		line-height:30px;
+		text-decoration:none;
+		text-transform:uppercase;
+		font-weight:700;
+		margin-top:20px;
+		letter-spacing:3px;
+
+		&:hover {
+			color:@textColor;
+		}
+	}
+}
+@media (max-width: 1664px) {
+	.btn {
+		&.btn-default {
+			padding:unit(percentage(25/1664), vw) unit(percentage(10/1664), vw);
+			min-width:unit(percentage(520/1664), vw);
+			font-size:unit(percentage(16/1664), vw);
+			line-height:unit(percentage(16/1664), vw);
+			letter-spacing:unit(percentage(3/1664), vw);
+		}
+		&.btn-primary {
+			padding:unit(percentage(25/1664), vw) unit(percentage(10/1664), vw);
+			min-width:unit(percentage(520/1664), vw);
+			font-size:unit(percentage(16/1664), vw);
+			line-height:unit(percentage(16/1664), vw);
+			letter-spacing:unit(percentage(3/1664), vw);
+		}
+		&.btn-blank {
+			font-size:unit(percentage(22/1664), vw);
+			line-height:unit(percentage(30/1664), vw);
+			margin-top:unit(percentage(20/1664), vw);
+			letter-spacing:unit(percentage(3/1664), vw);
+		}
+	}
+}
+@media (max-width: 980px) {
+	.btn {
+		&.btn-default {
+			font-size:unit(percentage(21/1664), vw);
+			line-height:unit(percentage(21/1664), vw);
+		}
+		&.btn-primary {
+			font-size:unit(percentage(21/1664), vw);
+			line-height:unit(percentage(21/1664), vw);
+		}
+		&.btn-blank {
+			font-size:unit(percentage(27/1664), vw);
+			line-height:unit(percentage(35/1664), vw);
+		}
+	}
+}
+@media (max-width: 768px) {
+	.btn {
+		&.btn-default {
+			padding:18px 5px;
+			min-width:100%;
+			font-size:12px;
+			line-height:12px;
+			letter-spacing:1px;
+		}
+		&.btn-primary {
+			padding:18px 5px;
+			min-width:100%;
+			font-size:12px;
+			line-height:12px;
+			letter-spacing:1px;
+		}
+		&.btn-blank {
+			font-size:12px;
+			line-height:20px;
+			margin-top:15px;
+			letter-spacing:1px;
+		}
+	}
+}

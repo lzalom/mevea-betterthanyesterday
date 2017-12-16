@@ -1,0 +1,274 @@
+var lt=[
+	{"name": "lang1", "text": "EN",	"mode": "id"},
+	{"name": "lang1", "text": "#", "mode": "href"},
+	{"name": "lang1", "text": "lang2", "mode": "class"},
+
+	{"name": "lang2", "text": "PT", "mode": "id"},
+	{"name": "lang2", "text": "javascript:langSet('de','pt');",	"mode": "href"},
+	{"name": "lang2", "text": "lang1", "mode": "class"},
+
+	{
+		"name": "tBanner01",
+		"text": "Better Than Yesterday",
+		"mode": "id"
+	},
+	{
+		"name": "tBanner02",
+		"text": "With a New Year comes the promise of a new start, a new you.<br>Take action and become better than yesterday!",
+		"mode": "id"
+	},
+	{
+		"name": "tBanner03",
+		"text": "Join Now and Pay from February",
+		"mode": "id"
+	},
+	{
+		"name": "tBanner04",
+		"text": "Fill in the form and get a voucher with your offer.",
+		"mode": "id"
+	},
+	{
+		"name": "tBanner05",
+		"text": "Congratulations on taking the first step to start the New Year in the best way possible.",
+		"mode": "id"
+	},
+	{
+		"name": "tBanner06",
+		"text": "Take this chance to get expert guidance. Choose a suitable fitness journey<br>and get the benefits of working out on the way to reaching your goals. ",
+		"mode": "id"
+	},
+	{
+		"name": "tBanner07",
+		"text": "Choose your new fitness journey",
+		"mode": "id"
+	},
+	{
+		"name": "tBanner08",
+		"text": "Start Your Journey",
+		"mode": "id"
+	},
+
+
+	{
+		"name": "tForm01",
+		"text": "Male",
+		"mode": "id"
+	},
+	{
+		"name": "tForm02",
+		"text": "Female",
+		"mode": "id"
+	},
+	{
+		"name": "tForm03",
+		"text": "Choose your preferred club",
+		"mode": "id"
+	},
+	{
+		"name": "tForm04",
+		"text": "I accept the <a href=''>terms and conditions</a>.",
+		"mode": "id"
+	},
+	{
+		"name": "tForm05",
+		"text": "* Exclusive for non Holmes Place members",
+		"mode": "id"
+	},
+
+
+
+	{
+		"name": "tRow01",
+		"text": "Holmes Place",
+		"mode": "id"
+	},
+	{
+		"name": "tRow02",
+		"text": "Premium Fitness Clubs",
+		"mode": "id"
+	},
+	{
+		"name": "tRow03",
+		"text": "At Holmes Place you will find state-of-the-art fitness equipment, a studio to enjoy our cutting-edge classes, a complete Wellness Zone with swimming pool, Jacuzzi, steam and dry sauna, a business lounge for members and the best wellness experts and personal trainers.",
+		"mode": "id"
+	},
+	{
+		"name": "tRow04",
+		"text": "State of the Art Equipment",
+		"mode": "id"
+	},
+	{
+		"name": "tRow05",
+		"text": "Gym facilities with state of the art equipment plus our four New Xpress Classes: Circuit, Functional, Roller and Abs. Recently launched so you can now start improving the former you.",
+		"mode": "id"
+	},
+	{
+		"name": "tRow06",
+		"text": "Join Now and Pay from February",
+		"mode": "id"
+	},
+	{
+		"name": "tRow07",
+		"text": "Cutting Edge Classes",
+		"mode": "id"
+	},
+	{
+		"name": "tRow08",
+		"text": "Searching for the right group classes to meet your ambitions? Search no more. In our full range of classes you’ll find the perfect approach to combine fun and progress.",
+		"mode": "id"
+	},
+	{
+		"name": "tRow09",
+		"text": "Complete Wellness Zone",
+		"mode": "id"
+	},
+	{
+		"name": "tRow10",
+		"text": "Swimming pool, sauna, Jacuzzi and dry sauna. Our heated indoor Wellness Areas are perfect for diving into your goals. Whether for leisure or to experience the benefits of our aqua classes, there's no storm in our calm blue waters.",
+		"mode": "id"
+	},
+	{
+		"name": "tRow11",
+		"text": "Personal Training",
+		"mode": "id"
+	},
+	{
+		"name": "tRow12",
+		"text": "Amazing coaches and companions, trained according to Holmes Place training academy’s high standards, are prepared to offer you all the support you need.",
+		"mode": "id"
+	},
+	{
+		"name": "tRow13",
+		"text": "With one of our personal trainers you will be able to focus on your individual needs, enjoy your experience and achieve your goals safely, efficiently and at your own speed.",
+		"mode": "id"
+	},
+	{
+		"name": "tRow14",
+		"text": "Ready to Start your New Fitness Journey?",
+		"mode": "id"
+	},
+	{
+		"name": "tRow15",
+		"text": "Join Now and Pay from February",
+		"mode": "id"
+	},
+	{
+		"name": "tRow16",
+		"text": "Better Than Yesterday",
+		"mode": "id"
+	},
+	{
+		"name": "tRow17",
+		"text": "Holmes Place Central Marketing 2018, All Rights Reserved.",
+		"mode": "id"
+	},
+
+	{
+		"name": "tRow18",
+		"text": "Start enjoying your <nobr>brand-new</nobr> fitness journey.",
+		"mode": "id"
+	},
+	{
+		"name": "tRow19",
+		"text": "Lighter, Younger, Fitter, Healthier or Happier.<br>No matter what your choice is, we're here to help you start your 2018 fitness journey the right way.",
+		"mode": "id"
+	},
+	{
+		"name": "tRow20",
+		"text": "Choose Your Best!",
+		"mode": "id"
+	},
+
+
+	{
+		"name": "tJourney01",
+		"text": "Lighter Than Yesterday",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney02",
+		"text": "Reset your habits to lose weight. Our personal trainer will guide you in your Welcome Session.",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney03",
+		"text": "Prepare yourself to enjoy classes or gym sessions that will support your goal.",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney04",
+		"text": "Choose Journey",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney05",
+		"text": "Younger Than Yesterday",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney06",
+		"text": "Ageing can be just a state of mind, especially when you respect your body.",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney07",
+		"text": "Enjoy a Welcome Session that will guide you on the best choices for you and your health.",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney08",
+		"text": "Choose Journey",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney09",
+		"text": "Fitter Than Yesterday",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney10",
+		"text": "Working out and feeling stronger, faster and fitter, will definitely lift your spirit!",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney11",
+		"text": "Enjoy our Welcome Session and experience all the benefits of our brand new Functional Xpress Class that will make you feel stronger in just 15 minutes.",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney12",
+		"text": "Choose Journey",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney13",
+		"text": "Healthier Than Yesterday",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney14",
+		"text": ">Joining a club encapsulates the idea of the perfect gift and our Welcome Session will sure make you see all the advantages of it.",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney15",
+		"text": "Choose Journey",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney16",
+		"text": "Happier Than Yesterday",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney17",
+		"text": "Pleasure plays a significant part in our notion of Enjoy The Journey. This feeling is guaranteed after our Welcome Session and classes like Zumba, a fun class based on Latin rhythms.",
+		"mode": "id"
+	},
+	{
+		"name": "tJourney18",
+		"text": "Choose Journey",
+		"mode": "id"
+	}
+];
+textsShow();

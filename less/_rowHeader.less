@@ -1,0 +1,126 @@
+/* HEADER */
+.row.header {
+    height:150px;
+    z-index:9;
+
+    .inner {
+        height:150px;
+
+        .logo {
+            position:absolute;
+            left:@gutter;
+            bottom:0px;
+
+            img {
+                width:570px;
+                height:auto;
+            }
+        }
+        .lang {
+            position:absolute;
+            right:@gutter;
+            top:75px;
+            font-size:20px;
+
+            ul {
+                margin:0px;
+                padding:0px;
+                padding-right:20px;
+
+                li {
+                    display:inline;
+                    margin-left:35px;
+                    opacity:0.5;
+
+                    a {
+                        color:@white;
+                        text-transform:uppercase;
+                        text-decoration:none;
+                    }
+                    &.active {
+                        opacity:1;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1664px) {
+    .row.header {
+        height:unit(percentage(150/1664), vw);
+
+        .inner {
+            height:unit(percentage(150/1664), vw);
+
+            .logo {
+                left:unit(percentage(30/1664), vw);
+                bottom:0px;
+
+                img {
+                    width:unit(percentage(570/1664), vw);
+                }
+            }
+            .lang {
+                right:unit(percentage(30/1664), vw);
+                top:unit(percentage(75/1664), vw);
+                font-size:unit(percentage(20/1664), vw);
+
+                ul {
+                    padding-right:unit(percentage(20/1664), vw);
+
+                    li {
+                        margin-left:unit(percentage(35/1664), vw);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 980px) {
+    .row.header {
+
+        .inner {
+
+            .logo {
+
+                img {
+                }
+            }
+            .lang {
+                font-size:unit(percentage(25/1664), vw);
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .row.header {
+        height:55px;
+
+        .inner {
+            height:55px;
+
+            .logo {
+                left:@gutter;
+
+                img {
+                    width:170px;
+                }
+            }
+            .lang {
+                top:20px;
+                right:@gutter;
+                font-size:14px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
